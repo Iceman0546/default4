@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="About Think Differently Dyslexia Support — meet Emma, our specialist assessor, and read what families say about working with us." name="description"/>
+<title>Think Differently | About Us</title>
+<!-- Favicon (tab icon) -->
+<link href="../images/logo_bigger.png" rel="icon" type="image/png"/>
+<link href="../images/logo_bigger.png" rel="apple-touch-icon"/>
+<!-- Google Fonts: Atkinson Hyperlegible (Option 6 accessible/dyslexia-friendly scheme) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="../css/style2.css?v=12" rel="stylesheet"/>
+<style>
+    .about-hero {
+      overflow: hidden;
+    }
+
+    /* ---- Journey accordion (replaces the old vertical timeline) ---- */
+    .journey-accordion {
+      max-width: 760px;
+      margin: 3rem auto 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .journey-item {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(58,175,169,0.3);
+      border-radius: var(--radius-lg);
+      margin-bottom: 1rem;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .journey-item:hover {
+      border-color: var(--blue-light);
+    }
+
+    .journey-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.3rem 1.6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      font-family: var(--font-body);
+      text-align: left;
+    }
+
+    .journey-question h4 {
+      color: var(--white);
+      font-size: 1.05rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .journey-question .journey-year {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--blue-light);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .journey-icon {
+      width: 30px;
+      height: 30px;
+      background: rgba(58,175,169,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: var(--white);
+      flex-shrink: 0;
+      transition: transform var(--transition), background var(--transition);
+    }
+
+    .journey-item.open .journey-icon {
+      transform: rotate(45deg);
+      background: var(--blue-light);
+    }
+
+    .journey-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      padding: 0 1.6rem;
+    }
+
+    .journey-item.open .journey-answer {
+      max-height: 260px;
+      padding: 0 1.6rem 1.4rem;
+    }
+
+    .journey-answer p {
+      color: rgba(255,255,255,0.78);
+      font-size: 0.93rem;
+    }
+  </style>
+</head>
+<body class="about-page">
+<!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="nav-container">
+<a aria-label="Think Differently Home" class="nav-logo" href="../index.html">
+<div class="logo-icon">TD</div>
+<span class="logo-text">Think<span> Differently</span></span>
+</a>
+<ul class="nav-links" id="nav-links" role="list">
+<li><a href="../index.html">Home</a></li>
+<li><a class="active" href="about2.html">About Us</a></li>
+<li><a href="gallery2.html">Gallery</a></li>
+<li><a href="contact2.html">Contact</a></li>
+<li><a class="nav-cta" href="contact2.html">Get In Touch</a></li>
+</ul>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle" id="nav-toggle">
+<span></span><span></span><span></span>
+</button>
+</div>
+</nav>
+<!-- ============================================================
+       ABOUT HERO
+       ============================================================ -->
+<section aria-label="About us hero" class="about-hero image-text-section image-text-section--image-right"><div class="image-text-inner"><div class="image-text-content fade-in"><div class="image-text-copy">
+<span class="badge">Our Story</span>
+<h1>From Teaching to<br/>Specialist Support</h1>
+<div class="divider-line"></div>
+<p>
+          Think Differently was created to give families clear, professional guidance when they are worried about a child's progress — delivered by a qualified specialist teacher and dyslexia assessor.
+        </p>
+</div></div><div class="image-text-media fade-in fade-in-delay-1"><img alt="A specialist teacher working one-to-one with a learner" loading="lazy" src="../images/reserve_photos/site_image3.png"/></div></div></section>
+<div class="section-separator about-page-separator" aria-hidden="true"><div class="sep-dots"><span></span><span></span><span></span></div></div>
+<!-- ============================================================
+       ABOUT CONTENT — ABOUT ME
+       ============================================================ -->
+<section aria-label="About Emma" class="about-content-section">
+<div class="about-grid">
+<div class="about-text fade-in">
+<span class="badge">About Me</span>
+<h2>Clear Answers, Delivered<br/>With Care</h2>
+<div class="divider-line"></div>
+<p>
+          I have worked in education for over 20 years, across mainstream classrooms and
+          specialist one-to-one teaching. As a qualified specialist teacher and dyslexia
+          assessor, I have seen how literacy difficulties can affect far more than just
+          schoolwork — they can impact confidence, self-esteem, and a child's overall
+          experience of learning.
+        </p>
+<p>
+          I created Think Differently Dyslexia Support because I wanted families to have
+          access to clear, honest, and professional support when they are worried about
+          their child's progress. Many parents feel overwhelmed trying to understand why
+          their child is struggling, what school support is available, and whether dyslexia
+          may be part of the picture. My goal is to make that process feel much clearer and
+          less stressful.
+        </p>
+<p>
+          I provide thorough diagnostic assessments that help identify a learner's strengths
+          and difficulties, offering practical recommendations and recognised reports that
+          support the next steps both in school and beyond. Just as importantly, I want
+          every family to feel listened to, supported, and confident moving forward.
+        </p>
+</div>
+<div class="about-image-wrap fade-in fade-in-delay-1">
+<img alt="Emma working with a student during an assessment" loading="lazy" src="../images/upgrade_photoshoot/Upgrade_photoshoot9.png"/>
+<div class="img-overlay"></div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+       PROFESSIONAL JOURNEY — DROPDOWN / ACCORDION
+       ============================================================ -->
+<section aria-label="Professional journey" class="experience-section">
+<div class="section-header fade-in" style="position:relative; z-index:1;">
+<span class="badge" style="background:rgba(58,175,169,0.25); color:var(--blue-light);">Professional Journey</span>
+<h2 style="color:var(--white);">A Career Rooted<br/>in Education</h2>
+<p style="color:rgba(255,255,255,0.75);">Over two decades of teaching and specialist assessment experience. Tap a stage to read more.</p>
+<div class="divider-line"></div>
+</div>
+<div class="journey-accordion">
+<div class="journey-item open">
+<button aria-expanded="true" class="journey-question">
+<span>
+<span class="journey-year">Present</span>
+<h4>Founder, Think Differently Dyslexia Support</h4>
+</span>
+<span aria-hidden="true" class="journey-icon">+</span>
+</button>
+<div class="journey-answer">
+<p>Providing professional diagnostic and screening assessments for children and young people, working closely with families and schools to deliver clear, recognised reports and practical next steps.</p>
+</div>
+</div>
+<div class="journey-item">
+<button aria-expanded="false" class="journey-question">
+<span>
+<span class="journey-year">Specialist Practice</span>
+<h4>Specialist Teacher &amp; Dyslexia Assessor</h4>
+</span>
+<span aria-hidden="true" class="journey-icon">+</span>
+</button>
+<div class="journey-answer">
+<p>Holds an Assessment Practising Certificate (APC) and specialises in one-to-one diagnostic work, identifying literacy difficulties and building tailored, evidence-based recommendations.</p>
+</div>
+</div>
+<div class="journey-item">
+<button aria-expanded="false" class="journey-question">
+<span>
+<span class="journey-year">20+ Years</span>
+<h4>Mainstream Classroom Teaching</h4>
+</span>
+<span aria-hidden="true" class="journey-icon">+</span>
+</button>
+<div class="journey-answer">
+<p>Two decades working in mainstream education, giving a grounded, practical understanding of how literacy difficulties present in the classroom and what genuinely helps learners at school and at home.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+       APPROACH SECTION
+       ============================================================ -->
+<section aria-label="Our approach" class="about-content-section" style="background: #FAF2E0;">
+<div class="about-grid reverse">
+<div class="about-image-wrap fade-in">
+<img alt="Emma explaining a concept during a session" loading="lazy" src="../images/site_image9extra.png"/>
+<div class="img-overlay"></div>
+</div>
+<div class="about-text fade-in fade-in-delay-1">
+<span class="badge">Our Approach</span>
+<h2>Assessment Philosophy<br/>&amp; Core Values</h2>
+<div class="divider-line"></div>
+<p>
+          A good assessment is about far more than testing. It is about building trust,
+          putting a child at ease, and giving families answers they can actually act on.
+        </p>
+<p>
+          Every assessment at Think Differently is built around three principles: clarity,
+          reassurance, and practical guidance. Concepts and results are explained with
+          absolute clarity, children are supported to feel comfortable throughout, and
+          every report ends with recommendations families and schools can put into practice.
+        </p>
+<p>
+          I stay up to date with current assessment standards and educational research, so
+          every family receives the most accurate and effective support available.
+        </p>
+</div>
+</div>
+</section>
+<div class="section-separator about-page-separator" aria-hidden="true"><div class="sep-dots"><span></span><span></span><span></span></div></div>
+
+<!-- ============================================================
+       TESTIMONIALS
+       ============================================================ -->
+<section aria-label="Student testimonials" class="testimonials-section">
+<div class="section-header fade-in">
+<span class="badge">Family Voices</span>
+<h2>What Families<br/>Say About Us</h2>
+<p>Real experiences from families who have worked with Think Differently.</p>
+<div class="divider-line"></div>
+</div>
+<div class="testimonials-grid">
+<div class="testimonial-card fade-in">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">
+          "Emma recently carried out an assessment on my daughter and the whole process from
+          contacting Emma to receiving the brilliant and very detailed report she provided was just
+          really stress free and my daughter felt happy and comfortable with Emma throughout the
+          whole assessment and that she was listened to about how she finds certain things difficult.
+          We would definitely recommend Emma to people we know."
+        </p>
+</div>
+<div class="testimonial-card fade-in fade-in-delay-1">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">
+          "Emma assessed my 16 year old son for dyslexia, and from the very first moment we
+          engaged with her, she made my son feel completely at ease, which meant so much to us.
+          The assessment itself was incredibly thorough, and the report that Emma provided offered
+          thoughtful, detailed guidance that will truly help support him through his exams. Thank you Emma!"
+        </p>
+</div>
+<div class="testimonial-card fade-in fade-in-delay-2">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">
+          "Emma is just wonderful. From the first point of contact Emma is reassuring,
+          professional, friendly, gentle and kind, sharing her knowledge and experience to
+          support you in your concerns regarding your child's difficulties."
+        </p>
+</div>
+<div class="testimonial-card fade-in">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">
+          "Emma has recently carried out an assessment on my grandson. Emma is professional,
+          proactive and ensured all parties involved were put at ease &amp; kept informed
+          throughout the process. The assessment itself was thorough and the results were
+          presented in a detailed but understandable manner."
+        </p>
+</div>
+<div class="testimonial-card fade-in fade-in-delay-1">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">
+          "My son was a little nervous about his assessment as he was unsure what to expect,
+          but after it finished he came out smiling, feeling relaxed and happy! Couldn't
+          recommend Emma enough and thankful to her for helping get my son the support he needed."
+        </p>
+</div>
+<div class="testimonial-card fade-in fade-in-delay-2">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">
+          "Both children were assessed by Emma and both said the assessment was not stressful.
+          The report received was comprehensive and individual to each child. The school was
+          very impressed and found the recommendations realistic and easy to put in place."
+        </p>
+</div>
+</div>
+</section>
+<div class="section-separator about-page-separator" aria-hidden="true"><div class="sep-dots"><span></span><span></span><span></span></div></div>
+
+<!-- ============================================================
+       CTA BANNER
+       ============================================================ -->
+<section aria-label="Call to action" class="bg-section about-bg-mid tall image-text-section image-text-section--image-left image-text-section--cta"><div class="image-text-inner"><div class="image-text-content fade-in"><div class="image-text-copy">
+<span class="badge">Get Started</span>
+<h2>Understand. Support.<br/>Move Forward.</h2>
+<div class="divider-line"></div>
+<p>
+          Get in touch to find the right assessment and support for your child.
+        </p>
+<div class="btn-group">
+<a class="btn btn-primary" href="contact2.html">Get In Touch</a>
+<a class="btn btn-outline" href="gallery2.html">Gallery</a>
+</div>
+</div></div><div class="image-text-media fade-in fade-in-delay-1"><img alt="A learner studying in a calm learning environment" loading="lazy" src="../images/upgrade_photoshoot/Upgrade_photoshoot7.png"/></div></div></section>
+<!-- ============================================================
+       FOOTER
+       ============================================================ -->
+<footer class="footer" role="contentinfo">
+<div class="footer-grid">
+<div class="footer-brand">
+<span class="logo-text">Think<span> Differently</span></span>
+<p>Providing clear, professional dyslexia assessments recognised by schools, and helping every learner understand their strengths and move forward with confidence.</p>
+<div class="social-links">
+       
+<a aria-label="Facebook" class="social-link" href="https://www.facebook.com/people/Think-Differently-dyslexia-assessment-and-support/100088559377130/">
+<svg viewbox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.86c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"></path></svg>
+</a>
+
+<a aria-label="Instagram" class="social-link" href="https://www.instagram.com/dyslexiaassessmentandsupport">
+<svg viewbox="0 0 24 24"><path d="M12 2c-2.72 0-3.06.01-4.12.06-1.06.05-1.79.22-2.43.47a4.9 4.9 0 0 0-1.77 1.15A4.9 4.9 0 0 0 2.53 5.45c-.25.64-.42 1.37-.47 2.43C2 8.94 2 9.28 2 12s.01 3.06.06 4.12c.05 1.06.22 1.79.47 2.43a4.9 4.9 0 0 0 1.15 1.77 4.9 4.9 0 0 0 1.77 1.15c.64.25 1.37.42 2.43.47C8.94 22 9.28 22 12 22s3.06-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47a4.9 4.9 0 0 0 1.77-1.15 4.9 4.9 0 0 0 1.15-1.77c.25-.64.42-1.37.47-2.43.05-1.06.06-1.4.06-4.12s-.01-3.06-.06-4.12c-.05-1.06-.22-1.79-.47-2.43a4.9 4.9 0 0 0-1.15-1.77A4.9 4.9 0 0 0 18.55 2.53c-.64-.25-1.37-.42-2.43-.47C15.06 2.01 14.72 2 12 2zm0 1.8c2.67 0 2.99.01 4.04.06.98.04 1.5.2 1.86.34.47.18.8.4 1.15.75.35.35.57.68.75 1.15.14.36.3.88.34 1.86.05 1.05.06 1.37.06 4.04s-.01 2.99-.06 4.04c-.04.98-.2 1.5-.34 1.86-.18.47-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.36.14-.88.3-1.86.34-1.05.05-1.37.06-4.04.06s-2.99-.01-4.04-.06c-.98-.04-1.5-.2-1.86-.34a3.1 3.1 0 0 1-1.15-.75 3.1 3.1 0 0 1-.75-1.15c-.14-.36-.3-.88-.34-1.86C3.81 14.99 3.8 14.67 3.8 12s.01-2.99.06-4.04c.04-.98.2-1.5.34-1.86.18-.47.4-.8.75-1.15.35-.35.68-.57 1.15-.75.36-.14.88-.3 1.86-.34C9.01 3.81 9.33 3.8 12 3.8zm0 3.05a5.15 5.15 0 1 0 0 10.3 5.15 5.15 0 0 0 0-10.3zm0 8.5a3.35 3.35 0 1 1 0-6.7 3.35 3.35 0 0 1 0 6.7zm6.55-8.7a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"></path></svg>
+</a>
+
+</div>
+</div>
+<div class="footer-col">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="about2.html">About Us</a></li>
+<li><a href="gallery2.html">Gallery</a></li>
+<li><a href="contact2.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Contact</h4>
+<ul>
+<li><a href="tel:+447557234915">+44 7557 234915</a></li>
+<li><a href="mailto:eforrester5@gmail.com">admin@thinkdifferentlydyslexia.co.uk</a></li>
+<li><a href="#">254 Widney Lane, Solihull, B91 3JY</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Think Differently. All rights reserved.</p>
+<a href="#">Back To Top</a>
+</div>
+</footer>
+<!-- Scroll to Top -->
+<button aria-label="Scroll to top" class="scroll-top">⇧</button>
+<!-- ============================================================
+       CHATBOT WIDGET
+       ============================================================ -->
+<div class="chatbot-widget">
+<button aria-expanded="false" aria-label="Open chat assistant" class="chatbot-toggle" id="chatbot-toggle">
+<span aria-hidden="true" class="chatbot-icon-open">💬</span>
+<span aria-hidden="true" class="chatbot-icon-close">✕</span>
+</button>
+<div aria-hidden="true" aria-label="Think Differently chat assistant" aria-modal="false" class="chatbot-window" id="chatbot-window" role="dialog">
+<div class="chatbot-header">
+<div class="chatbot-header-info">
+<div aria-hidden="true" class="chatbot-avatar">T</div>
+<div>
+<div class="chatbot-title">Think Differently Assistant</div>
+<div class="chatbot-status"><span aria-hidden="true" class="status-dot"></span>Online</div>
+</div>
+</div>
+<button aria-label="Close chat" class="chatbot-close" id="chatbot-close">✕</button>
+</div>
+<div aria-live="polite" class="chatbot-messages" id="chatbot-messages"></div>
+<div class="chatbot-quick-replies" id="chatbot-quick-replies"></div>
+<form class="chatbot-input-row" id="chatbot-form">
+<input aria-label="Type your message" autocomplete="off" id="chatbot-input" placeholder="Type your message..." type="text"/>
+<button aria-label="Send message" class="chatbot-send" type="submit">➤</button>
+</form>
+</div>
+</div>
+<script src="../js/main2.js"></script>
+<script src="../js/chatbot2.js"></script>
+<script>
+    // ---- Professional journey accordion ----
+    document.querySelectorAll('.journey-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.journey-item');
+        const isOpen = item.classList.contains('open');
+
+        document.querySelectorAll('.journey-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.journey-question').setAttribute('aria-expanded', 'false');
+        });
+
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

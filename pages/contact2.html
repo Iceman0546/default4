@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Contact Think Differently Dyslexia Support — get in touch to book a dyslexia assessment or ask a question." name="description"/>
+<title>Think Differently | Contact Us</title>
+<!-- Favicon (tab icon) -->
+<link href="../images/logo_bigger.png" rel="icon" type="image/png"/>
+<link href="../images/logo_bigger.png" rel="apple-touch-icon"/>
+<!-- Google Fonts: Atkinson Hyperlegible (Option 6 accessible/dyslexia-friendly scheme) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="../css/style2.css?v=12" rel="stylesheet"/>
+<style>
+    .contact-hero {
+      overflow: visible;
+    }
+ 
+    /* Map placeholder */
+    .map-container {
+      width: 100%;
+      height: 320px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-top: 1.5rem;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(58,175,169,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.8rem;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+    }
+ 
+    .map-container .map-icon {
+      font-size: 2.5rem;
+    }
+ 
+    .map-container p {
+      color: rgba(255,255,255,0.55);
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 0 1rem;
+    }
+ 
+    /* Opening hours table */
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+ 
+    .hours-table tr {
+      border-bottom: 1px solid rgba(58,175,169,0.15);
+      transition: background var(--transition);
+    }
+ 
+    .hours-table tr:last-child {
+      border-bottom: none;
+    }
+ 
+    .hours-table tr:hover {
+      background: rgba(58,175,169,0.06);
+    }
+ 
+    .hours-table td {
+      padding: 0.7rem 0.5rem;
+      font-size: 0.88rem;
+    }
+ 
+    .hours-table td:first-child {
+      color: var(--blue-dark);
+      font-weight: 600;
+    }
+ 
+    .hours-table td:last-child {
+      color: var(--text-mid);
+      text-align: right;
+    }
+ 
+    .hours-table .closed {
+      color: #c0392b;
+    }
+ 
+    .hours-table .open {
+      color: #27ae60;
+    }
+ 
+    /* FAQ section */
+    .faq-section {
+      padding: 5rem 2rem;
+      background: #FAF2E0;
+    }
+ 
+    .faq-list {
+      max-width: 800px;
+      margin: 3rem auto 0;
+    }
+ 
+    .faq-item {
+      border: 1px solid rgba(58,175,169,0.18);
+      border-radius: var(--radius);
+      margin-bottom: 1rem;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+ 
+    .faq-item:hover {
+      border-color: rgba(58,175,169,0.4);
+      box-shadow: 0 2px 12px rgba(58,175,169,0.1);
+    }
+ 
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.2rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--blue-dark);
+      text-align: left;
+      transition: var(--transition);
+    }
+ 
+    .faq-question:hover {
+      background: var(--teal);
+      color: var(--navy-dark);
+    }
+ 
+    .faq-question .faq-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--blue-pale);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: var(--blue-primary);
+      flex-shrink: 0;
+      transition: transform var(--transition), background var(--transition);
+    }
+ 
+    .faq-item.open .faq-question .faq-icon {
+      transform: rotate(45deg);
+      background: var(--blue-light);
+      color: var(--white);
+    }
+ 
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      padding: 0 1.5rem;
+    }
+ 
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding: 0 1.5rem 1.2rem;
+    }
+ 
+    .faq-answer p {
+      color: var(--text-mid);
+      font-size: 0.93rem;
+      line-height: 1.8;
+    }
+ 
+    /* Form character count */
+    .char-count {
+      font-size: 0.78rem;
+      color: var(--text-mid);
+      text-align: right;
+      margin-top: 0.25rem;
+    }
+ 
+    /* Required field indicator */
+    .required-star {
+      color: var(--blue-light);
+      margin-left: 2px;
+    }
+ 
+    /* Note: this form is presented as an illustrative example of the
+       information to include when getting in touch (see intro text
+       below) rather than a live, validating submission form, so no
+       error/invalid states are styled here. */
+  </style>
+</head>
+<body class="contact-page">
+<!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="nav-container">
+<a aria-label="Think Differently Home" class="nav-logo" href="../index.html">
+<div class="logo-icon">TD</div>
+<span class="logo-text">Think<span> Differently</span></span>
+</a>
+<ul class="nav-links" id="nav-links" role="list">
+<li><a href="../index.html">Home</a></li>
+<li><a href="about2.html">About Us</a></li>
+<li><a href="gallery2.html">Gallery</a></li>
+<li><a class="active" href="contact2.html">Contact</a></li>
+<li><a class="nav-cta" href="contact2.html">Get In Touch</a></li>
+</ul>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle" id="nav-toggle">
+<span></span><span></span><span></span>
+</button>
+</div>
+</nav>
+<!-- ============================================================
+       CONTACT HERO
+       ============================================================ -->
+<section aria-label="Contact hero" class="contact-hero image-text-section image-text-section--image-right"><div class="image-text-inner"><div class="image-text-content fade-in"><div class="image-text-copy">
+<span class="badge">Get in Touch</span>
+<h1>Let's Talk About<br/>What Comes Next</h1>
+<div class="divider-line"></div>
+<p>
+          Ready to book an assessment, ask a question, or simply understand your options? We are here to help.
+        </p>
+</div></div><div class="image-text-media fade-in fade-in-delay-1"><img alt="Contact and communication technology" loading="lazy" src="../images/upgrade_photoshoot/Upgrade_photoshoot10.png"/></div></div></section>
+<!-- SEPARATOR -->
+<div aria-hidden="true" class="section-separator">
+<div class="sep-dots"><span></span><span></span><span></span></div>
+</div>
+<!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+<section aria-label="Contact information and form" class="contact-section">
+<div class="contact-wrapper">
+<!-- ---- LEFT: Contact Info Panel ---- -->
+<div class="contact-info-panel fade-in">
+<h3>Contact Information</h3>
+<p class="sub">Reach us through any of the channels below. We aim to respond within 24 hours.</p>
+<!-- Address -->
+<div class="contact-info-item">
+<div aria-hidden="true" class="info-icon">🏠</div>
+<div class="info-content">
+<div class="label">Address</div>
+<div class="value">
+              254 Widney Lane,<br/>
+              Solihull<br/>
+              B91 3JY, United Kingdom
+            </div>
+</div>
+</div>
+<!-- Phone -->
+<div class="contact-info-item">
+<div aria-hidden="true" class="info-icon">📞</div>
+<div class="info-content">
+<div class="label">Phone Number</div>
+<div class="value">
+<a href="tel:+447557234915">+44 7557 234915</a><br/>
+<a href="https://wa.me/447557234915" style="font-size:0.85rem; opacity:0.8;">+44 7557 234915 (WhatsApp)</a>
+</div>
+</div>
+</div>
+<!-- Email -->
+<div class="contact-info-item">
+<div aria-hidden="true" class="info-icon">✉️</div>
+<div class="info-content">
+<div class="label">Email Address</div>
+<div class="value">
+<a href="mailto:admin@thinkdifferentlydyslexia.co.uk">admin@thinkdifferentlydyslexia.co.uk</a>
+</div>
+</div>
+</div>
+<!-- Social Links -->
+<div aria-label="Social media links" class="social-links">
+       
+<a aria-label="Facebook" class="social-link" href="https://www.facebook.com/people/Think-Differently-dyslexia-assessment-and-support/100088559377130/">
+<svg viewbox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.86c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"></path></svg>
+</a>
+
+<a aria-label="Instagram" class="social-link" href="https://www.instagram.com/dyslexiaassessmentandsupport">
+<svg viewbox="0 0 24 24"><path d="M12 2c-2.72 0-3.06.01-4.12.06-1.06.05-1.79.22-2.43.47a4.9 4.9 0 0 0-1.77 1.15A4.9 4.9 0 0 0 2.53 5.45c-.25.64-.42 1.37-.47 2.43C2 8.94 2 9.28 2 12s.01 3.06.06 4.12c.05 1.06.22 1.79.47 2.43a4.9 4.9 0 0 0 1.15 1.77 4.9 4.9 0 0 0 1.77 1.15c.64.25 1.37.42 2.43.47C8.94 22 9.28 22 12 22s3.06-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47a4.9 4.9 0 0 0 1.77-1.15 4.9 4.9 0 0 0 1.15-1.77c.25-.64.42-1.37.47-2.43.05-1.06.06-1.4.06-4.12s-.01-3.06-.06-4.12c-.05-1.06-.22-1.79-.47-2.43a4.9 4.9 0 0 0-1.15-1.77A4.9 4.9 0 0 0 18.55 2.53c-.64-.25-1.37-.42-2.43-.47C15.06 2.01 14.72 2 12 2zm0 1.8c2.67 0 2.99.01 4.04.06.98.04 1.5.2 1.86.34.47.18.8.4 1.15.75.35.35.57.68.75 1.15.14.36.3.88.34 1.86.05 1.05.06 1.37.06 4.04s-.01 2.99-.06 4.04c-.04.98-.2 1.5-.34 1.86-.18.47-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.36.14-.88.3-1.86.34-1.05.05-1.37.06-4.04.06s-2.99-.01-4.04-.06c-.98-.04-1.5-.2-1.86-.34a3.1 3.1 0 0 1-1.15-.75 3.1 3.1 0 0 1-.75-1.15c-.14-.36-.3-.88-.34-1.86C3.81 14.99 3.8 14.67 3.8 12s.01-2.99.06-4.04c.04-.98.2-1.5.34-1.86.18-.47.4-.8.75-1.15.35-.35.68-.57 1.15-.75.36-.14.88-.3 1.86-.34C9.01 3.81 9.33 3.8 12 3.8zm0 3.05a5.15 5.15 0 1 0 0 10.3 5.15 5.15 0 0 0 0-10.3zm0 8.5a3.35 3.35 0 1 1 0-6.7 3.35 3.35 0 0 1 0 6.7zm6.55-8.7a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"></path></svg>
+</a>
+
+</div>
+</div>
+<!-- contact-info-panel closes above: this was the missing tag that
+           had swallowed the form panel as a child, forcing everything
+           into one narrow column instead of the two-column grid. -->
+</div>
+</section>
+<!-- SEPARATOR -->
+<div aria-hidden="true" class="section-separator">
+<div class="sep-dots"><span></span><span></span><span></span></div>
+</div>
+<!-- ============================================================
+       FAQ SECTION
+       ============================================================ -->
+<section aria-label="Frequently asked questions" class="faq-section">
+<div class="section-header fade-in">
+<span class="badge">FAQs</span>
+<h2>Frequently Asked<br/>Questions</h2>
+<p>Find quick answers to the most common questions about dyslexia assessments.</p>
+<div class="divider-line"></div>
+</div>
+<div class="faq-list fade-in">
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
+          How do I book an assessment?
+          <span aria-hidden="true" class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>You can simply get in touch by phone, email or WhatsApp and we'll talk through your concerns and arrange a suitable time.</p>
+</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
+          What is a diagnostic dyslexia assessment?
+          <span aria-hidden="true" class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>It's a detailed way of understanding how your child learns, looking at areas such as reading, spelling, writing, memory and processing skills. If dyslexia is present, it provides a formal diagnosis along with practical recommendations for school and home, carried out by a qualified specialist teacher with an Assessment Practising Certificate.</p>
+</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
+          What does the assessment involve?
+          <span aria-hidden="true" class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>The assessment combines standardised tests with relaxed, child-friendly observation, and usually lasts around three hours with regular breaks. It covers reading, spelling, writing, phonological awareness, memory and processing speed, with everything explained clearly so your child feels settled throughout.</p>
+</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
+          Is the report accepted by schools and universities?
+          <span aria-hidden="true" class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>Yes. Reports meet the recognised standard for educational settings, are valid for life, and are accepted by schools for SEN support as well as universities and DSA (Disabled Students' Allowance) applications.</p>
+</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
+          Should I book a screening or a full diagnostic assessment?
+          <span aria-hidden="true" class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>A Dyslexia Screening Assessment (£100, around an hour, with verbal feedback) is a helpful first step if you're unsure whether a full assessment is needed. The Full Diagnostic Assessment (£480, approximately 3 hours) provides a formal diagnosis and a detailed written report recognised by schools.</p>
+</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
+          Will the assessment identify other learning needs?
+          <span aria-hidden="true" class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>Assessments focus on dyslexia and related literacy difficulties. Indicators of other challenges, such as attention or memory difficulties, may be noted, but conditions like ADHD, autism or dyscalculia are not formally diagnosed — the report can, however, highlight areas for further exploration.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+       FOOTER
+       ============================================================ -->
+<footer class="footer" role="contentinfo">
+<div class="footer-grid">
+<div class="footer-brand">
+<span class="logo-text">Think<span> Differently</span></span>
+<p>Providing clear, professional dyslexia assessments recognised by schools, and helping every learner understand their strengths and move forward with confidence.</p>
+<div class="social-links">
+       
+<a aria-label="Facebook" class="social-link" href="https://www.facebook.com/people/Think-Differently-dyslexia-assessment-and-support/100088559377130/">
+<svg viewbox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.86c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"></path></svg>
+</a>
+
+<a aria-label="Instagram" class="social-link" href="https://www.instagram.com/dyslexiaassessmentandsupport">
+<svg viewbox="0 0 24 24"><path d="M12 2c-2.72 0-3.06.01-4.12.06-1.06.05-1.79.22-2.43.47a4.9 4.9 0 0 0-1.77 1.15A4.9 4.9 0 0 0 2.53 5.45c-.25.64-.42 1.37-.47 2.43C2 8.94 2 9.28 2 12s.01 3.06.06 4.12c.05 1.06.22 1.79.47 2.43a4.9 4.9 0 0 0 1.15 1.77 4.9 4.9 0 0 0 1.77 1.15c.64.25 1.37.42 2.43.47C8.94 22 9.28 22 12 22s3.06-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47a4.9 4.9 0 0 0 1.77-1.15 4.9 4.9 0 0 0 1.15-1.77c.25-.64.42-1.37.47-2.43.05-1.06.06-1.4.06-4.12s-.01-3.06-.06-4.12c-.05-1.06-.22-1.79-.47-2.43a4.9 4.9 0 0 0-1.15-1.77A4.9 4.9 0 0 0 18.55 2.53c-.64-.25-1.37-.42-2.43-.47C15.06 2.01 14.72 2 12 2zm0 1.8c2.67 0 2.99.01 4.04.06.98.04 1.5.2 1.86.34.47.18.8.4 1.15.75.35.35.57.68.75 1.15.14.36.3.88.34 1.86.05 1.05.06 1.37.06 4.04s-.01 2.99-.06 4.04c-.04.98-.2 1.5-.34 1.86-.18.47-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.36.14-.88.3-1.86.34-1.05.05-1.37.06-4.04.06s-2.99-.01-4.04-.06c-.98-.04-1.5-.2-1.86-.34a3.1 3.1 0 0 1-1.15-.75 3.1 3.1 0 0 1-.75-1.15c-.14-.36-.3-.88-.34-1.86C3.81 14.99 3.8 14.67 3.8 12s.01-2.99.06-4.04c.04-.98.2-1.5.34-1.86.18-.47.4-.8.75-1.15.35-.35.68-.57 1.15-.75.36-.14.88-.3 1.86-.34C9.01 3.81 9.33 3.8 12 3.8zm0 3.05a5.15 5.15 0 1 0 0 10.3 5.15 5.15 0 0 0 0-10.3zm0 8.5a3.35 3.35 0 1 1 0-6.7 3.35 3.35 0 0 1 0 6.7zm6.55-8.7a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"></path></svg>
+</a>
+
+</div>
+</div>
+<div class="footer-col">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="about2.html">About Us</a></li>
+<li><a href="gallery2.html">Gallery</a></li>
+<li><a href="contact2.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Contact</h4>
+<ul>
+<li><a href="tel:+447557234915">+44 7557 234915</a></li>
+<li><a href="mailto:admin@thinkdifferentlydyslexia.co.uk">admin@thinkdifferentlydyslexia.co.uk</a></li>
+<li><a href="#">254 Widney Lane, Solihull, B91 3JY</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Think Differently. All rights reserved.</p>
+<a href="#">Back To Top</a>
+</div>
+</footer>
+<!-- Scroll to Top -->
+<button aria-label="Scroll to top" class="scroll-top">⇧</button>
+<!-- ============================================================
+       CHATBOT WIDGET
+       ============================================================ -->
+<div class="chatbot-widget">
+<button aria-expanded="false" aria-label="Open chat assistant" class="chatbot-toggle" id="chatbot-toggle">
+<span aria-hidden="true" class="chatbot-icon-open">💬</span>
+<span aria-hidden="true" class="chatbot-icon-close">✕</span>
+</button>
+<div aria-hidden="true" aria-label="Think Differently chat assistant" aria-modal="false" class="chatbot-window" id="chatbot-window" role="dialog">
+<div class="chatbot-header">
+<div class="chatbot-header-info">
+<div aria-hidden="true" class="chatbot-avatar">T</div>
+<div>
+<div class="chatbot-title">Think Differently Assistant</div>
+<div class="chatbot-status"><span aria-hidden="true" class="status-dot"></span>Online</div>
+</div>
+</div>
+<button aria-label="Close chat" class="chatbot-close" id="chatbot-close">✕</button>
+</div>
+<div aria-live="polite" class="chatbot-messages" id="chatbot-messages"></div>
+<div class="chatbot-quick-replies" id="chatbot-quick-replies"></div>
+<form class="chatbot-input-row" id="chatbot-form">
+<input aria-label="Type your message" autocomplete="off" id="chatbot-input" placeholder="Type your message..." type="text"/>
+<button aria-label="Send message" class="chatbot-send" type="submit">➤</button>
+</form>
+</div>
+</div>
+<script src="../js/main2.js"></script>
+<script src="../js/chatbot2.js"></script>
+<script>
+    // ---- Character counter for message textarea ----
+    const messageField = document.getElementById('message');
+    const charCount    = document.getElementById('message-count');
+ 
+    messageField && messageField.addEventListener('input', () => {
+      const len = messageField.value.length;
+      charCount.textContent = `${len} / 1000 characters`;
+    });
+ 
+    // ---- FAQ accordion ----
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+ 
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+ 
+        // Toggle clicked
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
